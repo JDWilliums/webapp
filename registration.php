@@ -44,12 +44,12 @@ if(isset($_POST["submit"])){
       font-family: Arial, sans-serif;
       background-color: white;
     }
-    /* styling */
+
     .container {
       width: 300px;
       margin: 100px auto 0;
     }
-    /* styling */
+
     .rectangle, .register-rectangle {
       height: 50px;
       background-color: #f4f4f4;
@@ -59,7 +59,7 @@ if(isset($_POST["submit"])){
       align-items: center;
       position: relative;
     }
-    /* styling */
+
     .register-rectangle {
       display: inline-block;
       padding: 10px;
@@ -69,7 +69,7 @@ if(isset($_POST["submit"])){
       text-align: center;
       font-weight: bold;
     }
-    /* styling */
+
     .textbox {
       width: calc(100% - 4px);
       border: none;
@@ -78,7 +78,7 @@ if(isset($_POST["submit"])){
       height: 100%;
       box-sizing: border-box;
     }
-    /* styling */
+
     .register-rectangle-small {
       height: 25px;
       background-color: #add8e6;
@@ -88,7 +88,7 @@ if(isset($_POST["submit"])){
       align-items: center;
       position: relative;
     }
-    /* styling */
+
     .register-text-small {
       margin: 0;
       text-align: center;

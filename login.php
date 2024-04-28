@@ -101,7 +101,7 @@ if(isset($_POST["submit"])){
   </style>
 </head>
 <body>
-  <!-- Form for email and password input -->
+  <!-- email and password form -->
   <form id="loginForm" action="login.php" method="post">
     <label for="Email">Email:</label>
     <input type="email" id="Email" name="email" required>
@@ -109,17 +109,15 @@ if(isset($_POST["submit"])){
     <label for="Password">Password:</label>
     <input type="password" id="Password" name="password" required>
 
-    <!-- Submit button and clear button -->
+
     <button type="submit" name="submit">Submit</button>
-    <!-- Display error message if login fails -->
+
     <?php if(isset($errorMessage)): ?>
     <p><?php echo $errorMessage; ?></p>
     <?php endif; ?>
 
-    <!-- registration link -->
     <p>Don't have an account? <a href="registration.php">Register here</a>.</p>
 
-    <!-- return to homepage link -->
     <p><a href="homepage.php">Return to HomePage</a></p>
   </form>
 </body>

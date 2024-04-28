@@ -1,5 +1,4 @@
 <?php
-// Include the database connection file
 require_once 'config.php';
 
 // Check if ID parameter is provided in the URL
@@ -7,7 +6,6 @@ if(isset($_GET['id'])) {
     // Get the caravan ID from the URL
     $caravan_id = $_GET['id'];
     
-    // Fetch the caravan details from the database based on the ID
     $query = "SELECT * FROM caravan_details WHERE id = $caravan_id";
     $result = mysqli_query($conn, $query);
     
@@ -28,7 +26,6 @@ if(isset($_GET['id'])) {
         $amenities = $caravan['amenities'];
         $notes = $caravan['notes'];
     } else {
-        // Caravan with the provided ID does not exist
         echo "Caravan not found.";
         exit();
     }
@@ -74,6 +71,5 @@ if(isset($_GET['id'])) {
 </html>
 
 <?php
-// Close the database connection
 mysqli_close($conn);
 ?>

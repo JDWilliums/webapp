@@ -1,5 +1,4 @@
 <?php
-// Include the database connection file
 require_once 'config.php';
 
 // Check if ID parameter is provided in the URL
@@ -16,7 +15,6 @@ if(isset($_GET['id'])) {
         // Fetch the details of the caravan
         $caravan = mysqli_fetch_assoc($result);
         
-        // Extract the details for pre-filling the form
         $name = $caravan['name'];
         $description = $caravan['description'];
         $location = $caravan['location'];
@@ -28,20 +26,16 @@ if(isset($_GET['id'])) {
         $amenities = $caravan['amenities'];
         $notes = $caravan['notes'];
     } else {
-        // Caravan with the provided ID does not exist
         echo "Caravan not found.";
         exit();
     }
 } else {
-    // ID parameter is not provided in the URL
     echo "Caravan ID not specified.";
     exit();
 }
 
 // Check if the form is submitted
 if(isset($_POST["submit"])){
-    // Retrieve form data
-    // Note: You may need to sanitize and validate the data before updating the database
     $name = $_POST["name"];
     $description = $_POST["description"];
     $location = $_POST["location"];
@@ -53,7 +47,7 @@ if(isset($_POST["submit"])){
     $amenities = $_POST["amenities"];
     $notes = $_POST["notes"];
 
-    // Prepare and execute the SQL query to update the caravan details in the database
+    // sql query stuff
     $query = "UPDATE caravan_details SET 
               name = '$name', 
               description = '$description', 
@@ -71,7 +65,6 @@ if(isset($_POST["submit"])){
         // Caravan details updated successfully
         echo '<script>alert("Caravan details updated successfully!")</script>';
     } else {
-        // Error occurred while updating caravan details
         echo "Error: " . $query . "<br>" . mysqli_error($conn);
     }
 }
@@ -168,6 +161,5 @@ if(isset($_POST["submit"])){
 </html>
 
 <?php
-// Close the database connection
 mysqli_close($conn);
 ?>

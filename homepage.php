@@ -8,7 +8,7 @@ require_once 'config.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RentMyCaravan.io</title>
-    <link rel="stylesheet" href="homepage.css"> <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="homepage.css">
 </head>
 <body>
     <div class="border-container">
@@ -28,8 +28,8 @@ require_once 'config.php';
                     </div>
                 </div>
                 <div class="image-box">
-                    <p>RentMyCaravan.io</p> <!--  text inside image box -->
-                </div> <!-- Added image box -->
+                    <p>RentMyCaravan.io</p>
+                </div>
             </div>
             <div class="rectangle" id="rectangle2">
                 <div class="horizontal-box">
@@ -41,7 +41,7 @@ require_once 'config.php';
                 <div class="horizontal-box">
                     <p>User8124: The rooms were very spacious and it was clean and tidy upon arrival! </p>
                 </div>
-                <div class="image-box-right"> <!-- Corrected positioning -->
+                <div class="image-box-right"> 
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeFEyJy-7f0uY5Z_qD3LX9MA7YTnierRNg0LHACZ0H6A&s" alt="Your Image">
                 </div>
             </div>

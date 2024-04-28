@@ -9,7 +9,7 @@ require_once 'config.php';
     <title>Add Caravan Details</title>
     <link rel="stylesheet" href="AddCaravan.css">
 </head>
-<body> <!--- All for boxes and text boxes --->
+<body>
 <div class="background-box">
     <div class="container">
         <div class="white-box">
@@ -96,10 +96,7 @@ require_once 'config.php';
 </div>
 <?php
 
-// Include the database connection file
 
-
-// Check if the form is submitted
 if(isset($_POST["submit"])){
     // Retrieve form data
     $name = $_POST["name"];
@@ -113,10 +110,10 @@ if(isset($_POST["submit"])){
     $amenities = $_POST["amenities"];
     $notes = $_POST["notes"];
 
-    // Retrieve the user ID of the logged-in user
+    // Retrieve the user ID of the user
     $user_id = $_SESSION['user_id'];
 
-    // Prepare and execute the SQL query to insert the caravan details into the database
+    // Insert into database
     $query = "INSERT INTO caravan_details (user_id, name, description, location, pricepernight, availabilityStart, availabilityEnd, image_url, video_url, amenities, notes)
               VALUES ('$user_id', '$name', '$description', '$location', '$pricepernight', '$availabilityStart', '$availabilityEnd', '$image_url', '$video_url', '$amenities', '$notes')";
     

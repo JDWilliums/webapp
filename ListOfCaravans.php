@@ -1,6 +1,6 @@
 <?php
 
-// Include the database connection file
+// connect to database
 require_once 'config.php';
 ?>
 <!DOCTYPE html>
@@ -20,7 +20,7 @@ require_once 'config.php';
         <?php
         // Check if the user is logged in
         if(isset($_SESSION['user_id'])) {
-            // If logged in, show "Add Your Own Caravan" button
+            // show addcaravan button, just in case user uploads caravan with no user id attached
             echo '<button class="add-caravan-button" onclick="location.href=\'addcaravan.php\'">Add Your Own Caravan</button>';
         }
         ?>
@@ -40,7 +40,7 @@ require_once 'config.php';
     </div>
 </div>
 <script>
-    // Javascript code for search bar functionality
+    // Javascript code for search bar
 
     document.addEventListener('DOMContentLoaded', function() {
     const searchBar = document.getElementById('searchBar');
@@ -63,7 +63,7 @@ require_once 'config.php';
 function confirmDelete(caravanId) {
     var result = confirm("Are you sure you want to delete this caravan?");
     if (result) {
-        // If user confirms, redirect to a PHP script to delete the caravan from the database
+        // redirects script to delete
         window.location.href = 'delete_caravan.php?id=' + caravanId;
     }
 }
@@ -99,7 +99,7 @@ if (mysqli_num_rows($result) > 0) {
             echo '</div>';
             echo '</div>';
         } else {
-            // If the user does not own this caravan
+            // If the user does not own this caravan / just for closing divs
             echo '</div>';
             echo '</div>';
             echo '</div>';
@@ -110,7 +110,6 @@ if (mysqli_num_rows($result) > 0) {
     echo '<p>No caravans available at the moment.</p>';
 }
 
-// Close the database connection
 mysqli_close($conn);
 ?>
 

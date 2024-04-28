@@ -7,8 +7,8 @@
 
 .textbox p {
     margin: 0;
-    color: #333; /* Text color */
-    font-size: 24px; /* Font size */
+    color: #333;
+    font-size: 24px;
 }
 
 .search-container {
@@ -45,38 +45,38 @@
 }
 
 .grey-box {
-    width: 500px; /*  width */
-    height: 200px; /*  height */
+    width: 500px;
+    height: 200px;
     background-color: #ccc;
     margin-right: 20px;
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /*  text to the left */
+    justify-content: flex-start;
 }
 
 .grey-box p {
     margin: 0;
-    font-size: 28px; /* font size for the 'Mountain' text */
+    font-size: 28px;
 }
 
 .grey-box p:not(.title) {
-    font-size: 14px; /* font size for the other details */
+    font-size: 14px;
 }
 
 
 
 .inner-grey-box {
      /* background color */
-    padding: 10px; /*  padding */
+    padding: 10px;
     margin-top: 10px;
 }
 
 .inner-grey-box p {
-    font-size: 14px; /* font size as needed */
+    font-size: 14px;
 }
 .details {
-    font-size: 14px; /* font size for the specific details */
+    font-size: 14px;
 }
 .button-container {
     margin-top: 10px;
