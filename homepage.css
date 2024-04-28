@@ -1,0 +1,228 @@
+* {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body, html {
+            height: 100%;
+        }
+
+        body {
+            background-color: grey;
+            border: 10px solid black; /* Add a black border around the screen */
+            box-sizing: border-box; /* Include border in the total width and height */
+            margin: 0; 
+            padding: 0; 
+            height: 100vh; 
+            overflow: scroll; 
+        }
+        
+
+        .border-container {
+            border: 10px solid black;
+            box-sizing: border-box;
+            height: 100vh;
+            overflow: hidden;    
+        }
+
+        .container {
+            position: relative; 
+            width: 100%;
+            height: 100%;
+            overflow-y: auto;
+        }
+
+        .rectangle {
+            position: absolute; /* Position each rectangle */
+            width: calc(100% - 20px); /* Adjust width  */
+            margin: 10px;
+            background-color: white; 
+        }
+
+        #rectangle1 {
+            top: 0;
+            height: 10%; /* Adjust height for the top rectangle */
+        }
+
+        #rectangle2 {
+            top: 12%; /* Adjust top position for each rectangle */
+            height: 30%; /* Adjust height for the other rectangles */
+        }
+
+        #rectangle3 {
+            top: 44%;
+            height: 22%; /* Adjusted height for the third rectangle */
+        }
+
+        #rectangle4 {
+            top: 68%; /* Adjusted top position for the fourth rectangle */
+            height: 30%; /* Adjusted height for the fourth rectangle */
+        }
+
+        .links {
+            display: flex;
+            justify-content: flex-end; /* links to the right */
+            align-items: center;
+            height: 100%;
+            padding-right: 20px; 
+        }
+
+
+        .image-box {
+            width: 40%; /* Adjust width  */
+            height: 80%; /* Adjust height */
+            background-color: #f2f2f2;
+            position: absolute; 
+            top: 10%; /* Move down by 10% */
+            left: 2%; /* Keep image box on the left */
+            display: flex; 
+            justify-content: center; /* Center the content horizontally */
+            align-items: center; /* Center the content vertically */
+        }
+
+        .image-box p {
+            font-size: 48px; 
+            color: #000000; /* Text color */
+        }
+		
+
+        .image-box-right {
+            width: 30vw; /* Adjust width  */
+            height: 63%; /* Adjust height  */
+            background-color: #ffffff; 
+            position: absolute; /* Position image box */
+            top: 17%; 
+            right: 5%; /* Move image box to the right side */
+            display: flex; 
+            justify-content: center; /* Center the content horizontally */
+            align-items: center; /* Center the content vertically */
+        }
+
+        .image-box-right img {
+            width: 100%; /* Adjust  width of the image */
+            height: auto; /* Adjust height of the image */
+        }
+
+        .image-box-right p {
+            font-size: 48px; /* Adjust font size  */
+            color: #000000; /* Text color */
+        }
+
+        .horizontal-box {
+            width: 52%;
+            height: calc(33.33% - 20px); 
+            background-color: #ffffff; /* White background color */
+            margin: 10px 0; 
+            margin-left: 20px;
+            top: 10px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .horizontal-box {
+            width: 52%; 
+            height: calc(33.33% - 20px); 
+            background-color: #f2f2f2;
+            margin: 10px 0;
+            margin-left: 20px;
+            top: 10px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid black; 
+        }
+
+        .horizontal-box p {
+            margin: 0;
+            font-size: 18px; 
+            color: #000000; /* Text color */
+        }
+
+        .text-box {
+            border: 2px solid black; /* Black border */
+            background-color: #f2f2f2; /* Grey background color */
+            padding: 20px; 
+            position: absolute; /* Position the text box */
+            top: 15%; 
+            right: 5%; /* Adjust right position */
+            width: 90%; /* Adjust the width  */
+            height: 200px; /* Adjust the height  */
+        }
+        
+
+        .text-box p {
+            margin: 0; 
+            font-size: 25px; /* Make the text bigger (adjust size ) */
+            font-weight: bold; /* Make the text bold */
+        }
+		.text-box-left {
+    border: 2px solid black; /* Black border */
+    background-color: #f2f2f2; /* Grey background color */
+    padding: 20px; /* Add padding to the text box */
+    position: absolute; /* Position the text box */
+    top: 40%; /* Adjust top position  */
+    left: 30%; /* Adjust left position  */
+	transform: translate(-50%, -50%);
+    width: 45%; /* Adjust the width  */
+    height: 160px; /* Adjust the height  */
+}
+
+.text-box-left p {
+    margin: 0; 
+    font-size: 25px; /* Adjust font size  */
+    font-weight: bold; /* Make the text bold */
+}
+.image-box-right {
+    background-color: #f2f2f2; /* Grey background color */
+    padding: 20px; 
+    position: absolute; /* Position the image box */
+    top: 15%; /* Adjust top position */
+    right: 5%; /* Adjust right position */
+    width: 30%; /* Adjust the width  */
+    height: 180px; /* Adjust the height  */
+}
+
+.image-box-right img {
+    width: 100%; /*  maximum width of the image */
+    height: auto; /*  height of the image */
+}
+.text-box-bottom {
+    border: 2px solid black; /* Black border */
+    background-color: white; /* Grey background color */
+    padding: 20px; 
+    position: absolute; 
+    bottom: 2%; /* Adjust bottom position  */
+    left: 1%; /* Adjust left position  */
+    width: 45%; /* Adjust the width */
+    height: 110px; /* Adjust the height */
+}
+
+.text-box-bottom p {
+    margin: 0; 
+    font-size: 25px; /* Make the text bigger (adjust size) */
+    font-weight: bold; /* Make the text bold */
+}
+.image-box-bottom {
+    position: absolute; /* Position the image box */
+    bottom: 4%; /* Adjust bottom position */
+    left: 38%; /* Adjust left position  */
+    transform: translateX(-50%); /* Center the image box horizontally */
+}
+
+.image-box-bottom img {
+    width: 100px; /* Adjust the width of the image */
+    height: auto; 
+}
+
+a {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}

@@ -1,0 +1,83 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px; 
+}
+
+.white-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.name-box {
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+p {
+    margin: 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+.input-container {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.submit-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.caravan-input,
+.caravan-textarea {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+    width: 500px; 
+    margin-bottom: 10px; 
+    display: block;
+    box-sizing: border-box;
+}
+
+.caravan-input:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.background-box {
+    background-color: lightgrey;
+    padding: 20px;
+    position: sticky;
+    width: 100%;
+    top: 0;
+}
+
+.logout {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    padding-right: 20px; 
+}
+

@@ -1,0 +1,99 @@
+.textbox {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.textbox p {
+    margin: 0;
+    color: #333; /* Text color */
+    font-size: 24px; /* Font size */
+}
+
+.search-container {
+    margin-top: 20px;
+    display: flex;
+}
+
+.search-bar {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.search-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.search-button:hover {
+    background-color: #45a049;
+}
+
+.container {
+    display: flex;
+    margin-top: 20px;
+}
+
+.grey-box {
+    width: 500px; /*  width */
+    height: 200px; /*  height */
+    background-color: #ccc;
+    margin-right: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /*  text to the left */
+}
+
+.grey-box p {
+    margin: 0;
+    font-size: 28px; /* font size for the 'Mountain' text */
+}
+
+.grey-box p:not(.title) {
+    font-size: 14px; /* font size for the other details */
+}
+
+
+
+.inner-grey-box {
+     /* background color */
+    padding: 10px; /*  padding */
+    margin-top: 10px;
+}
+
+.inner-grey-box p {
+    font-size: 14px; /* font size as needed */
+}
+.details {
+    font-size: 14px; /* font size for the specific details */
+}
+.button-container {
+    margin-top: 10px;
+}
+
+.edit-button,
+.delete-button {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.edit-button:hover,
+.delete-button:hover {
+    background-color: #45a049;
+}
