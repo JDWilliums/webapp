@@ -1,0 +1,77 @@
+/* .navwrap {
+    display: flex;
+} */
+
+body{
+    /* This is to remove page borders */
+    margin: 0;
+    padding: 0;
+}
+
+.navwrap{
+    display: flex;
+    background-color: wheat;
+    padding: 5px;
+    padding-left: 15%;
+    padding-right: 15%;
+    border-bottom: black solid 2px;
+}
+
+.nav li {
+    /* Align Items Centrally */
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+
+    display: inline-block;        /* Display sideways */
+    list-style-type: none;        /* Remove bullets */
+    padding: 15px;                /* Remove padding */
+    margin: 0px;                  /* Remove margins */
+    text-decoration: none;        /* Remove link colours and underlines  */
+    font: var(--font_1);          /* Set font to variable at root */
+  }
+
+/* Navigation Button Hover Animation */
+.nav li:hover {
+    transition: background-color, 0.5s;
+    background-color: var(--color_4);
+}
+
+.bodywrap{
+    /* Margins and Borders */
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 2em;
+    border: black 2px solid;
+
+    background-color: var(--color_4);
+}
+
+.banner {
+    padding: 1em;
+
+    /* Centrally Align Items */
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    font: var(--font_0);
+}
+
+.abouttext {
+    font: var(--font_2);
+    padding: 1.5em;
+}
+
+:root {
+    --font_0: normal normal normal 38px/0.9em Verdana;
+    --font_1: normal normal normal 16px/2em Verdana;
+    --font_2: normal normal normal 17px/1em Verdana;
+    --color_0: #5BA4EC; /*  */
+    --color_1: #BAC1B8; /*  */
+    --color_2: #5E8FA5; /*  */
+    --color_3: #F7D55C; /*  */
+    --color_4: #eeeeee; /*  */
+}
